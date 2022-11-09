@@ -12,13 +12,13 @@ public class HealthcareWorkerTeam implements HealthcareServiceable {
         members.remove(worker);
     }
     public void service() {
-        // print every member's services in team
+        
         for (HealthcareServiceable member : members){
             member.service();
         }
     }
     public double getPrice() {
-        // calculate totalPrice of all members in team
+        
         double totalPrice = 0;
         for (HealthcareServiceable member : members){
             totalPrice += member.getPrice();
